@@ -16,12 +16,16 @@
             </thead>
             <tbody>
                 <tr v-for="referencia of referencias" :key="referencia.id">
-
-                    <h3> {{ referencia.nome }} </h3>
-                    <v-img class="inicio-imagem mb-5" :src="referencia.imagem">
-                    </v-img>
-                    <span class="pl-2">{{ referencia.descrição }}</span>
-
+                    <center>
+                    <div id="referencias">
+                        <h3> {{ referencia.nome }} </h3>
+                    
+                        <a :href="referencia.link"><v-img :src="referencia.imagem" /></a>
+                        
+                        <p class="pl-2">{{ referencia.descricao }}</p>
+                        <hr/>
+                    </div>
+                    </center>          
                 </tr>
             </tbody>
             </template>
@@ -54,5 +58,26 @@ export default {
 
 <style scoped>
 
+#referencias {
+
+    max-width: 85vw;
+    margin-bottom: 5px;
+    border: 2px;
+
+}
+
+#referencias h3 {
+
+    max-width: 100%;
+
+}
+
+#referencias p {
+
+    margin-top: 10px;
+    text-align: justify;
+    max-width: 100%;
+
+}
 
 </style>
