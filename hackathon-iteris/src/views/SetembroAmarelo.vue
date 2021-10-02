@@ -7,9 +7,25 @@
             Pensamos nosso app para lhe fornecer algumas ideias de como se divertir praticando o isolamento social, mas se ainda assim
             você achar que não está bem, não deixe de <strong>pedir ajuda!</strong>
         </v-p>
-        <li>
-            
-        </li>
+        <v-simple-table>
+            <template v-slot:default>
+            <thead>
+                <tr>
+                <th colspan="2" class="text-left text-center">Referências Externas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="referencia of referencias" :key="referencia.id">
+
+                    <h3> {{ referencia.nome }} </h3>
+                    <v-img class="inicio-imagem mb-5" :src="referencia.imagem">
+                    </v-img>
+                    <span class="pl-2">{{ referencia.descrição }}</span>
+
+                </tr>
+            </tbody>
+            </template>
+        </v-simple-table>
     </v-container>
 
 
@@ -21,16 +37,16 @@ export default {
     data() {
 
         return {
-            referenciasSA: []
+            referencias: []
         }
         
     },
 
     created() {
         fetch('https://it3zxc-default-rtdb.firebaseio.com/setembroamarelo.json')
-            .then(response => response.json)
+            .then(response => response.json())
             .then(json => {
-                this.referenciaSA = json;
+                this.referencias = json;
             })
     }
 }
