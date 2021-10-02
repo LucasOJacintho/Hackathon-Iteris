@@ -6,7 +6,7 @@
             <template v-slot:default>
             <thead>
                 <tr>
-                <th colspan="2" class="text-left text-center">Referências Externas</th>
+                <th colspan="2" class="text-left text-center"></th>
                 </tr>
             </thead>
             <tbody>
