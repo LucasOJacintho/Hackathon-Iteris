@@ -6,7 +6,7 @@
         Início
       </v-toolbar-title>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer app fixed v-model="drawer" temporary>
       <v-list nav dense>
         <v-list-item-group v-model="group" active-class="green--text text--lighten-2">
             <router-link to="/">
