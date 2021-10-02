@@ -1,6 +1,6 @@
 <template>
     <div class="app-top-bar">
-        <v-app-bar app color="yellow">
+        <v-app-bar app color="rgba(247, 209, 29,224)">
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title app color="black">
         Início
@@ -9,7 +9,7 @@
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list nav dense>
         <v-list-item-group v-model="group" active-class="green--text text--lighten-2">
-            <router-link to="/inicio">
+            <router-link to="/">
                 <v-list-item>
                     <v-list-item-icon>
                     <v-icon>mdi-home</v-icon>
@@ -69,7 +69,5 @@ export default {
     .app-top-bar a{
         text-decoration: none;
     }
-    v-toolbar-title{
-        color:black
-    }
+
 </style>

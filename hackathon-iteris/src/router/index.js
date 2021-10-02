@@ -9,8 +9,8 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/inicio',
-    name: 'inicio',
+    path: '/',
+    name: 'Inicio',
     component: Inicio
   },
   {

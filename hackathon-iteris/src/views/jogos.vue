@@ -1,5 +1,5 @@
 <template>
-    <div class = 'Inicio'>
+    <div class = 'Jogos'>
         <h1>Jogos</h1>
         <p>
             É consenso que a pandemia acelerou uma série de tendências, 
