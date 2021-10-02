@@ -1,11 +1,15 @@
 <template>
     <v-container class="setembro-amarelo">
         <h2>Setembro Amarelo</h2>
+        <v-img class="inicio-imagem mb-4" src="https://th.bing.com/th/id/R.688954d8a406af7a50c525fd21a62579?rik=BI4sBOKtdD5FGA&pid=ImgRaw&r=0" />
         <hr/>
-        <p class="mt-2">
+        <v-p class="mt-2">
             Pensamos nosso app para lhe fornecer algumas ideias de como se divertir praticando o isolamento social, mas se ainda assim
             você achar que não está bem, não deixe de <strong>pedir ajuda!</strong>
-        </p>
+        </v-p>
+        <li>
+            
+        </li>
     </v-container>
 
 
@@ -33,4 +37,6 @@ export default {
 </script>
 
 <style scoped>
+
+
 </style>
