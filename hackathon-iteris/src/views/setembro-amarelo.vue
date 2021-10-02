@@ -1,6 +1,6 @@
 <template>
     <div class = 'Inicio'>
-        <h1>Início</h1>
+        <h1>Setembro Amarelo</h1>
         <p>
             É consenso que a pandemia acelerou uma série de tendências, 
             como a disseminação do home office e as compras pela internet. 
@@ -21,9 +21,5 @@ export default {
 <style scoped>
     .Inicio h1{
         color:black
-    }
-    p {
-        text-align: justify;
-        padding: 0 10px;
     }
 </style>
