@@ -8,7 +8,6 @@
   </div>-->
   <v-app>
     <AppTopBar/>
-    <ClubesTabela/>
     <v-main>
         <router-view/>
     </v-main> 
