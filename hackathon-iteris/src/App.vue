@@ -1,14 +1,6 @@
 <template>
-  <!--<div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/setembro">About</router-link>
-    </div>
-    <router-view/>
-  </div>-->
   <v-app>
     <AppTopBar/>
-    <ClubesTabela/>
     <v-main>
         <router-view/>
     </v-main> 
