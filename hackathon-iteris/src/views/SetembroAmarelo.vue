@@ -23,6 +23,7 @@
                         <a :href="referencia.link"><v-img :src="referencia.imagem" /></a>
                         
                         <p class="pl-2">{{ referencia.descricao }}</p>
+                        <hr/>
                     </div>
                     </center>          
                 </tr>
